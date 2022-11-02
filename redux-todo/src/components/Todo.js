@@ -119,7 +119,9 @@ const Todo = () => {
             })}
           </div>
           <Grid sx={{ display: "flex", justifyContent: "center" }}>
-            <Button sx={{ backgroundColor: "#fff", mt: 4 }}>CLEAR ALL</Button>
+            <Button
+              onClick={() => dispatch(removeTodo())}
+              sx={{ backgroundColor: "#fff", mt: 4 }}>REMOVE ALL</Button>
           </Grid>
         </Card>
       </Box>
